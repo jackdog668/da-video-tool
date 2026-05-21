@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-da-bg: #0A0B0D;
+  --color-da-card: #12131A;
+  --color-da-edge: #1F2230;
+  --color-da-green: #40FF78;
+  --color-da-gold: #FFDB40;
+  --color-da-purple: #7A30FF;
+  --color-da-blue: #00C8FF;
+  --color-da-text: #E8ECF1;
+  --color-da-muted: #7A8290;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+@layer base {
+  html, body, #root {
+    background: var(--color-da-bg);
+    color: var(--color-da-text);
+    font-family: var(--font-display);
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background:
+      radial-gradient(circle at 20% -10%, rgba(122, 48, 255, 0.08), transparent 50%),
+      radial-gradient(circle at 80% 110%, rgba(64, 255, 120, 0.06), transparent 50%),
+      var(--color-da-bg);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Scrollbar — subtle DA-themed */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-da-edge);
+    border-radius: 8px;
+    border: 2px solid var(--color-da-bg);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-da-muted);
+  }
+}
