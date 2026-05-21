@@ -52,7 +52,7 @@ Don't trust — verify. Your AI is your security partner.
 Grab the installer from [Releases](https://github.com/jackdog668/da-video-tool/releases/latest):
 
 ```
-Video Lab_0.1.0_x64-setup.exe   (~62MB)
+Video.Lab_0.1.0_x64-setup.exe   (~62MB)
 ```
 
 Double-click → next next finish → done.

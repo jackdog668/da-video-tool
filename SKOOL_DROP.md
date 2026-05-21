@@ -109,8 +109,10 @@ Hosted on **GitHub Releases** — Skool's free-tier file cap is ~30MB so we host
 **Direct download (paste this into the Skool post as the install button link):**
 
 ```
-https://github.com/jackdog668/da-video-tool/releases/download/v0.1.0/Video%20Lab_0.1.0_x64-setup.exe
+https://github.com/jackdog668/da-video-tool/releases/download/v0.1.0/Video.Lab_0.1.0_x64-setup.exe
 ```
+
+> GitHub Releases renamed the file from `Video Lab_...` to `Video.Lab_...` on upload — the dot is correct. When members download it, they'll see `Video.Lab_0.1.0_x64-setup.exe` on disk.
 
 **Release page (paste in the body so members can see what's new):**
 
@@ -123,7 +125,7 @@ https://github.com/jackdog668/da-video-tool/releases/tag/v0.1.0
 After downloading, open PowerShell where the file is and run:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\"Video Lab_0.1.0_x64-setup.exe"
+Get-FileHash -Algorithm SHA256 .\Video.Lab_0.1.0_x64-setup.exe
 ```
 
 You should see:
