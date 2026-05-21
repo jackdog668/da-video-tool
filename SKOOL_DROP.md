@@ -69,12 +69,12 @@ That's the whole methodology of vibe coding in 5 minutes — your AI is your sec
 
 ### Path A — Quick install
 
-1. Click the `Video Lab_0.1.0_x64-setup.exe` file attached to this post
-2. Save it somewhere (Downloads is fine)
-3. Double-click the `.msi`
+1. Open the [Release page](https://github.com/jackdog668/da-video-tool/releases/tag/v0.1.0)
+2. Under **Assets**, click `Video.Lab_0.1.0_x64-setup.exe` to download (~62MB)
+3. Double-click the downloaded `.exe`
 4. If Windows says **"Microsoft Defender SmartScreen prevented an unrecognized app from starting"** → click **More info** → **Run anyway**
 5. The installer runs. Click through (default options are fine).
-6. Find **DA Video Tool** in your Start menu or Desktop, open it.
+6. Find **Video Lab** in your Start menu or Desktop, open it.
 
 ### First download
 
