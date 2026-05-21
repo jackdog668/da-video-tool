@@ -10,6 +10,8 @@ Everything you need to ship `Video Lab` to your Skool community in one paste.
 >
 > Paste any video link. Get the file. No browser ads, no sketchy sites, no "convert to MP3" pop-ups.
 >
+> First time I've packaged a real desktop app for y'all — vibe-coded, free, .exe, runs offline.
+>
 > **What it does:**
 > • Downloads from YouTube, Vimeo, TikTok, Twitter/X, Instagram, Twitch, and 1000+ other sites (anywhere yt-dlp works)
 > • MP4 video up to 4K, or rip the audio as MP3
