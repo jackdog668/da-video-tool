@@ -19,9 +19,37 @@
 
 ---
 
-## Install (for members of the community)
+## Install
 
-**Grab the installer from [Releases](https://github.com/jackdog668/da-video-tool/releases/latest):**
+### The vibe-coder install path (recommended)
+
+If you're using **Claude Code, Cursor, Codex, Windsurf, Aider**, or any AI dev environment — let your AI verify the code is safe AND walk you through the install. This is the same move you should make for any open-source software a stranger on the internet hands you, including this one.
+
+Paste this prompt into your AI:
+
+```
+Look at this repo: https://github.com/jackdog668/da-video-tool
+
+Read the README, the LICENSE, the package.json, src/App.tsx,
+src-tauri/src/lib.rs, src-tauri/Cargo.toml, src-tauri/tauri.conf.json,
+and scripts/fetch-binaries.ps1.
+
+Tell me:
+1. What does this app actually do?
+2. Is the code safe to run? Any red flags (data exfiltration, network
+   calls to weird servers, anything that touches files outside what
+   you'd expect for a video downloader)?
+3. What external binaries does it bundle and where do they come from?
+4. Walk me through downloading the latest release installer from
+   https://github.com/jackdog668/da-video-tool/releases/latest
+   and installing it on Windows. Include the SmartScreen step.
+```
+
+Don't trust — verify. Your AI is your security partner.
+
+### The quick install path
+
+Grab the installer from [Releases](https://github.com/jackdog668/da-video-tool/releases/latest):
 
 ```
 Video Lab_0.1.0_x64-setup.exe   (~62MB)

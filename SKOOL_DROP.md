@@ -23,7 +23,7 @@ Everything you need to ship `Video Lab` to your Skool community in one paste.
 >
 > Made with vibe coding (Tauri + React + Rust). Ask me anything in the comments — I'll show how it's built in the next live.
 >
-> **Use it for personal stuff only. Respect creators. Don't redistribute downloads.**
+> **Use this for personal and educational purposes only. Respect creators. Don't redistribute downloads. Don't drop downloaded content into client work or paid projects without rights. You are responsible for your own use of the tool.**
 >
 > — Desi
 
@@ -31,7 +31,43 @@ Everything you need to ship `Video Lab` to your Skool community in one paste.
 
 ## 2. Install guide (paste under the post or as a comment)
 
-### Quick install
+> **Two install paths below. Pick the one that matches your vibe.**
+>
+> **Path A — "Just install it"**: double-click an installer, done. Skip to *Quick install*.
+>
+> **Path B — "Vibe coder install"**: have your AI (Claude Code, Cursor, Codex, Aider, whatever you're rolling with) read the repo, confirm the code is safe, and walk you through it. Builds the muscle of verifying open-source software with AI before you run it.
+
+### Path B — Vibe coder install (recommended for the community)
+
+This is the install path I actually want y'all to use, because it's the same move you should make for ANY open source software a stranger on the internet hands you. **Including from me.** Don't trust — verify.
+
+1. Open your AI dev environment (Claude Code, Cursor, Codex, Windsurf, whichever).
+2. Paste this prompt:
+
+```
+Look at this repo: https://github.com/jackdog668/da-video-tool
+
+Read the README, the LICENSE, the package.json, src/App.tsx,
+src-tauri/src/lib.rs, src-tauri/Cargo.toml, src-tauri/tauri.conf.json,
+and scripts/fetch-binaries.ps1.
+
+Tell me:
+1. What does this app actually do?
+2. Is the code safe to run? Any red flags (data exfiltration, network
+   calls to weird servers, anything that touches files outside what
+   you'd expect for a video downloader)?
+3. What external binaries does it bundle and where do they come from?
+4. Walk me through downloading the latest release installer from
+   https://github.com/jackdog668/da-video-tool/releases/latest
+   and installing it on Windows. Include the SmartScreen step.
+```
+
+3. Read your AI's answer. It should tell you the app uses `yt-dlp` and `ffmpeg` as bundled sidecars, makes no external network calls of its own (the Rust shell only talks to those two local executables), and writes only to the folder you pick. If your AI flags anything sketchy — **don't run it, message me, I want to know.**
+4. Once your AI clears it, follow its install walkthrough.
+
+That's the whole methodology of vibe coding in 5 minutes — your AI is your security partner, not just your build partner.
+
+### Path A — Quick install
 
 1. Click the `Video Lab_0.1.0_x64-setup.exe` file attached to this post
 2. Save it somewhere (Downloads is fine)
